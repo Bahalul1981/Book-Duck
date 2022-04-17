@@ -1,0 +1,112 @@
+body{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url(/fronend/image/mainbackground.png);
+    background-size: cover;
+    
+  }
+  
+  #headerdiv{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 200px;
+      width: 100%;
+      background-color: rgba(72, 59, 40, 0.405);
+      /* background-image:url(/frontend/headerpic.jpeg); */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      /* filter: blur(1px); */
+      box-shadow: black 3px 3px 3px;
+      color: white;
+      margin-bottom: 20px;
+    
+  
+  }
+  
+  
+  #maindiv{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      justify-content: space-between;
+      
+    
+  }
+  
+  #textbook{
+      background-color: rgba(113, 136, 136, 0.55);
+      height:auto;
+      width: 48%;
+      overflow-y: auto;
+     
+      
+      
+  }
+  
+  #audiobook  {
+      background-color: rgba(113, 136, 136, 0.55);    
+      height:auto;
+      width: 48%;
+      overflow-y: auto;
+     
+  
+  }
+  
+  #footerdiv{
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      justify-content: space-around;
+      height: auto;   
+      width: 100%;
+      background-color: rgba(72, 59, 40, 0.433);
+      position: fixed;
+      bottom: 0;
+      
+     
+  }
+  h1{
+      font-size: 4rem;
+      text-shadow: black 5px 5px 5px;
+  }
+  
+  h2{
+      font-size: 2rem;
+      text-align: center;
+      background-color: rgba(72, 59, 40, 0.2);
+      cursor: pointer;
+      margin-left: 20%;
+      margin-right: 20%;
+      box-shadow: white 3px 3px 3px;
+  }
+  
+  /* This section for regestration and login  in  new profile.html*/
+  
+  #login{
+      margin-top: 20px;
+      height: 300px;
+      width: 600px;
+      background-color: rgba(50, 103, 103, 0.347);
+  }
+  
+  #reg{
+      margin-top: 20px;
+      height: 300px;
+      width: 600px;
+      background-color: rgba(50, 103, 103, 0.332);
+  }
+  #reglog{
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: rgb(231, 223, 211);
+      
+      
+  }

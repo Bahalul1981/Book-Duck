@@ -1,0 +1,43 @@
+{
+  "kind": "collectionType",
+  "collectionName": "textbooks",
+  "info": {
+    "singularName": "textbook",
+    "pluralName": "textbooks",
+    "displayName": "Textbook"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "titel": {
+      "type": "string"
+    },
+    "writer": {
+      "type": "string"
+    },
+    "page": {
+      "type": "integer"
+    },
+    "grade": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "catagories": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::catagory.catagory",
+      "inversedBy": "textbooks"
+    }
+  }
+}

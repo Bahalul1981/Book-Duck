@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "catagories",
+  "info": {
+    "singularName": "catagory",
+    "pluralName": "catagories",
+    "displayName": "catagory"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "audiobooks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::audiobook.audiobook",
+      "mappedBy": "catagories"
+    },
+    "textbooks": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::textbook.textbook",
+      "inversedBy": "catagories"
+    }
+  }
+}
