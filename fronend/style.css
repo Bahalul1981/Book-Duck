@@ -70,9 +70,11 @@ body{
       
      
   }
-  h1{
-      font-size: 4rem;
+  #header{
+      font-size: 2rem;
       text-shadow: black 5px 5px 5px;
+      text-align: center;
+      
   }
   
   h2{
@@ -109,4 +111,58 @@ body{
       background-color: rgb(231, 223, 211);
       
       
+  }
+
+
+
+
+
+  /* working for uppload page */
+  
+  #upladyourbook{
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+  }
+  #uploaTextbook{
+    margin-top: 20px;
+    height:400px;
+    width: 600px;
+    background-color: rgba(50, 103, 103, 0.332);
+
+
+  }
+  #uploaAudiobook{
+    margin-top: 20px;
+    height: 400px;
+    width: 600px;
+    background-color: rgba(50, 103, 103, 0.332);
+
+  }
+
+
+
+/* responsive websida  */
+@media only screen and (max-width: 900px) {
+    #body,#headerdiv,#maindiv,#displayalltextbook,#footerdiv {
+        width: 100%;
+        height: auto;
+        word-wrap: break-word;
+        color: beige;
+      flex-wrap: wrap;
+       
+    }
+  }
+
+  @media only screen and (max-width: 700px) {
+    #body,#headerdiv,#maindiv,#displayalltextbook{
+        width: 100%;
+        height: auto;
+        word-wrap: break-word;
+        color: blanchedalmond;
+        
+        
+       
+    }
   }

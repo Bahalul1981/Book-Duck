@@ -4,12 +4,12 @@ let displayalltextbook= document.getElementById("displayalltextbook")
 
 // Save all strapi data for text book
 
-let saveTextBookData=""
+
 
 // Function for get data
 let getTextBook=async()=>{
-
  
+    let saveTextBookData="";
     await axios.get("http://localhost:1337/api/textbooks?populate=*",{
 
         // This headers cod by difalt from strapi, to check login status. If some logd in they have permition to run this function.
@@ -72,10 +72,11 @@ let displayallaudiobook= document.getElementById("displayallaudiobook")
 
 // Save all strapi data for audio book
 
-let saveAudioBookData=""
+
 
 // Function for get data
 let getAudioBook=async()=>{
+    let saveAudioBookData=""
    
     await axios.get("http://localhost:1337/api/audiobooks?populate=*",{
 
@@ -138,6 +139,7 @@ document.getElementById("newaudiobook").addEventListener("click",getAudioBook)
 let whoisloggdin=""
 
 let loginFunction= async()=>{
+   
     const username= document.getElementById("username").value;
     const password=document.getElementById("password").value;
     if(username==""){
@@ -162,6 +164,7 @@ let loginFunction= async()=>{
   if(sessionStorage.getItem("token")){
       alert("You are logged in now")
       window.location.href = "./index.html";
+      
     
   }
  
@@ -220,6 +223,7 @@ document.getElementById("registration").addEventListener("click",registration)
 
 // To display who is logged in
 
+
 if(sessionStorage.getItem("token")){
 
   let newuswername=sessionStorage.getItem("username")
@@ -230,3 +234,4 @@ if(sessionStorage.getItem("token")){
 
   document.getElementById("test").innerHTML=whoisloggdin 
 }
+
