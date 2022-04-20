@@ -2,6 +2,9 @@
 
 
 let uploadTextBook=()=>{
+    
+    
+
     console.log();
         let newtitle=document.getElementById("title")
         let newwriter=document.getElementById("writer")
@@ -30,11 +33,15 @@ let uploadTextBook=()=>{
                 image:imageid,
                 catagories:[1]
             }
-        },
+            
+        }
+        
+        ,
         {
             headers:{Authorization:`Bearer ${sessionStorage.getItem("token")}`}
         })
     })
+    
 }
 
 
@@ -88,6 +95,7 @@ let upploaNewAudioBook=()=>{
                 image:newimageid,
                 catagories:[1]
             }
+
             
         },
 
@@ -105,11 +113,15 @@ if(document.getElementById("audiosubmit")){
 }
 
 //Move to upload page
-
+if(document.getElementById("upploadNewBook")){
 document.getElementById("upploadNewBook").addEventListener("click",function(){
     window.location.href="/fronend/upload.html"
 })
+}
+
 
 // Display what you upploaded
+// document.getElementById("whatyouuploaded").innerHTML=uploadTextBook
+
 
 

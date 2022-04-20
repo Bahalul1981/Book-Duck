@@ -29,7 +29,6 @@ body{
   
   #maindiv{
       display: flex;
-      align-items: center;
       justify-content: center;
       text-align: center;
       justify-content: space-between;
@@ -48,10 +47,11 @@ body{
   }
   
   #audiobook  {
-      background-color: rgba(113, 136, 136, 0.55);    
+      background-color: rgba(113, 136, 136, 0.55); 
       height:auto;
       width: 48%;
       overflow-y: auto;
+      position:top;
      
   
   }
@@ -165,4 +165,11 @@ body{
         
        
     }
+  }
+
+  #whatyouuploaded{
+      margin-top: 20px;
+      width: auto;
+      width: 600px;
+      background-color:  rgba(50, 103, 103, 0.332);
   }
